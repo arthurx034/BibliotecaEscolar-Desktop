@@ -12,7 +12,7 @@ public class Main extends Application {
                 "/com/arthur/biblioteca/biblioteca/biblioteca.fxml"
         ));
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
-        stage.setTitle("Sistema de Biblioteca do ALDA");
+        stage.setTitle("Sistema de Biblioteca");
         stage.setScene(scene);
         stage.show();
     }

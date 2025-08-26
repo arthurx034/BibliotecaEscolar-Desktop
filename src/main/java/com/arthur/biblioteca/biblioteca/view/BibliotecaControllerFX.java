@@ -69,8 +69,7 @@ public class BibliotecaControllerFX {
         TextField edicaoField = new TextField();
         edicaoField.setPromptText("Edição");
 
-        grid.add(new Label("ISBN:"), 0, 0);
-        grid.add(isbnField, 1, 0);
+        grid.add(new Label("ISBN:"), 0, 0);     grid.add(isbnField, 1, 0);
         grid.add(new Label("Título:"), 0, 1);
         grid.add(tituloField, 1, 1);
         grid.add(new Label("Autor:"), 0, 2);

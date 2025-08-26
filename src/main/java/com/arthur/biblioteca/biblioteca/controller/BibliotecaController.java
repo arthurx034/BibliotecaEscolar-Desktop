@@ -66,8 +66,8 @@ public class BibliotecaController {
 
             isbn = isbn.trim();  // Remover espaços no início e fim do ISBN
 
-            if (isbn.isEmpty() || !(isbn.length() == 10 || isbn.length() == 13) || !isbn.matches("\\d+")) {
-                mostrarAlerta("Erro", "ISBN deve ter 10 ou 13 dígitos!", AlertType.ERROR);
+            if (isbn.isEmpty() || isbn.length() < 10 || isbn.length() > 13 || !isbn.matches("\\d+")) {
+                mostrarAlerta("Erro", "ISBN deve ter entre 10 e 13 dígitos!", AlertType.ERROR);
                 return;
             }
 
